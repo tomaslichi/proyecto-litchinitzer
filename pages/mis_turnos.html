@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnos y Servicios - Mis Turnos</title>
+    <!--icofont-->
+    <link rel="stylesheet" href="./icofont/icofont/icofont.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>TurnosYServicios.com</h1>
+        <h2> Todos tus turnos en un mismo lugar </h2>
+        <h3 class="text-end">iniciar sesion</h3>
+        <!-- Barra menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><i class="icofont-ui-calendar text-dark"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        <a class="nav-link" href="mis_turnos.html">MIS TURNOS</a>
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2 class="negrita"> Ingrese su ID para chequear sus turnos</h2>
+        <form>
+            <input type="text" name="ID">
+            <input type="submit" name="Aceptar">
+        </form>
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%234285F4&ctz=America%2FArgentina%2FBuenos_Aires&showTitle=1&showTabs=1&mode=MONTH&title=Mis%20Turnos" style="border:solid 1px rgb(34, 33, 33)" class="misTurnosCalendar"
+            width="600" height="400" frameborder="0" scrolling="no"></iframe>
+
+        <hr>
+
+        <h2 class="negrita cursiva">Turnos para...</h2>
+
+        <section class="sacarTurno">
+            <iframe src="https://calendar.google.com/calendar/embed?height=330&wkst=1&bgcolor=%233F51B5&ctz=America%2FArgentina%2FBuenos_Aires&title=Turnos%20Disponibles&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0" style="border:solid 1px #777" width="450"
+                height="330" frameborder="0" scrolling="no"></iframe>
+            <form>
+                <label for="appt" class="negrita">Selecciona un horario:</label>
+                <input type="time" id="elegirHora" name="appt">
+                <input type="submit" value="Enviar datos">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <footer>
+            <h4> logo pagina </h4>
+            <section>
+                <a href="https://www.instagram.com/?hl=es"><i class="icofont-instagram"></i></a>
+                <a href="https://www.apple.com/la/app-store/"><i class="icofont-brand-apple"></i></a>
+                <a href="https://play.google.com/store?hl=es_AR&gl=US"><i class="icofont-brand-android-robot"></i></a>
+            </section>
+        </footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>

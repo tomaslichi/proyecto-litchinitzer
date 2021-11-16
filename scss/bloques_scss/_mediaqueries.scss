@@ -1,0 +1,38 @@
+@import "estilos";
+@media (min-width: 1024px) {
+    .sec_index {
+        display: grid;
+        grid-template-areas: "experiencia experiencia noticias" "nosotros nosotros noticias";
+    }
+}
+
+@media (min-width: 600px) and (max-width:1023px) {
+    .sec_index {
+        display: grid;
+        grid-template-areas: "experiencia noticias" "nosotros noticias";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 3fr 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 10px;
+    }
+    .misTurnosCalendar {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 599px) {
+    .grid-area {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .misTurnosCalendar {
+        width: 50%;
+        height: 50%;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+}

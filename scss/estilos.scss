@@ -1,0 +1,90 @@
+@import "bs_scss/bootstrap.scss";
+@import "bloques_scss/encabezado";
+@import "bloques_scss/pie";
+@import "bloques_scss/mediaqueries";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.sec_index {
+    grid-template-areas: "experiencia experiencia noticias" "nosotros nosotros noticias";
+    grid-template-columns: 35% 35% 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+}
+
+
+/* Experiencia */
+
+#experiencia {
+    grid-area: experiencia;
+}
+
+#experiencia__fieldset {
+    border-radius: 30% 10% 30% 10%;
+    padding: 30px;
+    border-style: ridge;
+    border-width: 4px;
+}
+
+#experiencia__fieldset__ol {
+    padding-left: 20px;
+}
+
+
+/* Noticias index */
+
+#noticiasIndex {
+    grid-area: noticias;
+    fieldset {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+
+/* Buscador servicios */
+
+.contenedor-buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0 20px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div {
+        margin: 10px;
+    }
+}
+
+
+/* Mis Turnos */
+
+.sacarTurno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.misTurnosCalendar {
+    width: 600px;
+    height: 400px;
+}
